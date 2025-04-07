@@ -1,4 +1,5 @@
 #include "Bomba.h"
+#include "BloqueCeramica.h"
 #include "Enemigo.h"
 #include "TimerManager.h"
 #include "UObject/ConstructorHelpers.h"   // Para ConstructorHelpers
@@ -64,17 +65,22 @@ void ABomba::BeginPlay()
 void ABomba::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
     FVector NormalImpulse, const FHitResult& Hit)
 {
-    if (OtherActor && OtherActor != this) // Verifica que el actor no sea esta misma bomba
+    if (OtherActor && OtherActor != this) // Evitar autocolisiones
     {
-        // Comprueba si el actor colisionado es de tipo AEnemigo
+        // Destruir si es un Enemigo
         if (OtherActor->IsA(AEnemigo::StaticClass()))
         {
             UE_LOG(LogTemp, Warning, TEXT("¡Bomba colisionó con un Enemigo! Eliminando..."));
-
-            // Destruir al Enemigo
+            OtherActor->Destroy();
+        }
+        // Destruir si es un BloqueArena
+        else if (OtherActor->IsA(ABloqueCeramica::StaticClass()))
+        {
+            UE_LOG(LogTemp, Warning, TEXT("¡Bomba colisionó con un BloqueArena! Eliminando..."));
             OtherActor->Destroy();
         }
     }
+
 }
 
 void ABomba::DestruirBomba()

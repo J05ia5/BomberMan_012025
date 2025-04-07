@@ -14,6 +14,7 @@ ABloqueArena::ABloqueArena()
 			MallaBloque->SetMaterial(0, MaterialBase.Object); // Asignar el material al slot 0
 		}
 	}
+	
 
 }
 
@@ -23,5 +24,9 @@ void ABloqueArena::BeginPlay()
 	// Aquí puedes agregar cualquier lógica adicional que necesites al inicio del juego
 	
 
+}
+
+void ABloqueArena::Tick(float DeltaTime)
+{
 }
 
