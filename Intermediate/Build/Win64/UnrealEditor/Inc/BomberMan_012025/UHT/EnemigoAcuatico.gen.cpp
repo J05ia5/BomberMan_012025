@@ -84,10 +84,10 @@ AEnemigoAcuatico::~AEnemigoAcuatico() {}
 struct Z_CompiledInDeferFile_FID_BomberMan_012025_Source_BomberMan_012025_Public_EnemigoAcuatico_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AEnemigoAcuatico, AEnemigoAcuatico::StaticClass, TEXT("AEnemigoAcuatico"), &Z_Registration_Info_UClass_AEnemigoAcuatico, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemigoAcuatico), 3962236170U) },
+		{ Z_Construct_UClass_AEnemigoAcuatico, AEnemigoAcuatico::StaticClass, TEXT("AEnemigoAcuatico"), &Z_Registration_Info_UClass_AEnemigoAcuatico, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AEnemigoAcuatico), 1918916031U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BomberMan_012025_Source_BomberMan_012025_Public_EnemigoAcuatico_h_3917825144(TEXT("/Script/BomberMan_012025"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_BomberMan_012025_Source_BomberMan_012025_Public_EnemigoAcuatico_h_182627469(TEXT("/Script/BomberMan_012025"),
 	Z_CompiledInDeferFile_FID_BomberMan_012025_Source_BomberMan_012025_Public_EnemigoAcuatico_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_BomberMan_012025_Source_BomberMan_012025_Public_EnemigoAcuatico_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

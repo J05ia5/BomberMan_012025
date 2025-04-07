@@ -16,23 +16,12 @@ class BOMBERMAN_012025_API ABloqueBurbuja : public ABloque
 public:
 	// Constructor
 	ABloqueBurbuja();
+	void Tick(float DeltaTime);
 protected:
 	virtual void BeginPlay() override;
 
-public:
+private:
+	FVector PosicionInicial;
 
-	void Tick(float DeltaTime);
-	// Aquí puedes agregar cualquier lógica adicional que necesites al inicio del juego
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movimiento")
-	bool bPuedeMoverse = true; // Controla si el actor se puede mover
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movimiento")
-	float FloatSpeed = 20.0f; // Velocidad del movimiento
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movimiento")
-	float MinZ = 100.0f; // Altura mínima permitida
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movimiento")
-	float MaxZ = 500.0f; // Altura máxima permitida
 };
+

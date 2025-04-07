@@ -17,13 +17,13 @@ ABloque::ABloque()
 	{
 		MallaBloque->SetStaticMesh(ObjetoMallaBloque.Object);
 
-		MallaBloque->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f));
+		MallaBloque->SetRelativeLocation(FVector(0.0f, 0.0f, 0.0f)); //la posicion del bloque
 
-		MallaBloque->SetRelativeScale3D(FVector(1.0f, 1.0f, 2.0f));
+		MallaBloque->SetRelativeScale3D(FVector(1.0f, 1.0f, 2.0f)); //la escala del bloque
 	}
 
 	FloatSpeed = 5.0f; 
-	RotationSpeed = 0.0f;
+	RotationSpeed = 3.0f;
 
 	bPuedeMoverse = FMath::RandBool();
 }

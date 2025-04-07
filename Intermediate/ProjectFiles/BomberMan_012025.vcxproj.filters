@@ -11,6 +11,8 @@
     <None Include="..\..\Source\BomberMan_012025Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
@@ -90,6 +92,9 @@
     <ClCompile Include="..\..\Source\BomberMan_012025\Private\BloqueVidrio.cpp">
       <Filter>Source\BomberMan_012025\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\BomberMan_012025\Private\Bomba.cpp">
+      <Filter>Source\BomberMan_012025\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\BomberMan_012025\Private\Enemigo.cpp">
       <Filter>Source\BomberMan_012025\Private</Filter>
     </ClCompile>
@@ -139,6 +144,9 @@
       <Filter>Source\BomberMan_012025\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\BomberMan_012025\Public\BloqueVidrio.h">
+      <Filter>Source\BomberMan_012025\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\BomberMan_012025\Public\Bomba.h">
       <Filter>Source\BomberMan_012025\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\BomberMan_012025\Public\Enemigo.h">

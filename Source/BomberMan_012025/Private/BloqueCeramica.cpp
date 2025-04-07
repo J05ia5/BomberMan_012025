@@ -13,10 +13,24 @@ ABloqueCeramica::ABloqueCeramica()
 			MallaBloque->SetMaterial(0, MaterialBase.Object); // Asignar el material al slot 0
 		}
 	}
+	bPuedeMoverse = true;//FMath::RandBool(); // Desactivar el movimiento
 }
 
 void ABloqueCeramica::BeginPlay()
 {
 	Super::BeginPlay();
 	// Aquí puedes agregar cualquier lógica adicional que necesites al inicio del juego
+
+}
+
+void ABloqueCeramica::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	if (bPuedeMoverse)
+	{
+		FRotator NuevaRotacion = GetActorRotation() + FRotator(0.0f, 2.0f, 0.0f);
+		SetActorRotation(NuevaRotacion);
+	}
+
 }

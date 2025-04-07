@@ -252,6 +252,8 @@
     <None Include="..\..\BomberMan_012025.uproject"/>
     <None Include="..\..\Source\BomberMan_012025.Target.cs"/>
     <None Include="..\..\Source\BomberMan_012025Editor.Target.cs"/>
+    <None Include="..\..\.gitattributes"/>
+    <None Include="..\..\.gitignore"/>
     <None Include="..\..\.vsconfig"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
@@ -304,6 +306,9 @@
     <ClCompile Include="..\..\Source\BomberMan_012025\Private\BloqueVidrio.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\BomberMan_012025\Private\Bomba.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\BomberMan_012025\Private\Enemigo.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -330,6 +335,7 @@
     <ClInclude Include="..\..\Source\BomberMan_012025\Public\BloqueMadera.h"/>
     <ClInclude Include="..\..\Source\BomberMan_012025\Public\BloquePiedra.h"/>
     <ClInclude Include="..\..\Source\BomberMan_012025\Public\BloqueVidrio.h"/>
+    <ClInclude Include="..\..\Source\BomberMan_012025\Public\Bomba.h"/>
     <ClInclude Include="..\..\Source\BomberMan_012025\Public\Enemigo.h"/>
     <ClInclude Include="..\..\Source\BomberMan_012025\Public\EnemigoAcuatico.h"/>
     <ClInclude Include="..\..\Source\BomberMan_012025\Public\EnemigoAereo.h"/>
