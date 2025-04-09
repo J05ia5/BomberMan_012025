@@ -15,7 +15,7 @@ public:
     // Constructor: Sets default values for this actor's properties
     ABomba();
 
-    // Componente de malla est·tica para el bloque
+    // Componente de malla est√°tica para el bloque
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Malla")
     UStaticMeshComponent* MallaBomba;
 
@@ -23,21 +23,21 @@ protected:
     // Llamado cuando el juego inicia o el actor se genera
     virtual void BeginPlay() override;
 
-    // Temporizador para controlar la destrucciÛn
+    // Temporizador para controlar la destrucci√≥n
     FTimerHandle DestructionTimer;
 
-    // FunciÛn que se ejecutar· cuando finalice el temporizador
+    // Funci√≥n que se ejecutar√° cuando finalice el temporizador
     void DestruirBomba();
 
     // Tiempo antes de destruirse (configurable desde el editor)
-    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "ConfiguraciÛn")
-    float TiempoParaDestruir = 5.0f; // Tiempo en segundos
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Configuraci√≥n")
+    float TiempoParaDestruir = 1.0f; // Tiempo en segundos
 
 public:
 
-    // FunciÛn para manejar colisiones o lÛgica especial (opcional) para graveedad e interaiones con objetos 
+    // Funci√≥n para manejar colisiones o l√≥gica especial (opcional) para graveedad e interaiones con objetos 
     UFUNCTION()
-    // Configurar la funciÛn de colisiÛn y destruccion
+    // Configurar la funci√≥n de colisi√≥n y destruccion
     void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
         FVector NormalImpulse, const FHitResult& Hit);
 
